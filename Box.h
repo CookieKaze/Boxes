@@ -16,6 +16,7 @@
 @property float width;
 @property float length;
 
-
+- (instancetype) initWithWidth: (float)width andHeight: (float)height andLength: (float)length;
+- (float) calculateVolume;
 
 @end
