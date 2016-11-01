@@ -21,9 +21,17 @@
     return self;
 }
 
-
 - (float) calculateVolume {
     float volume = self.width * self.height * self.length;
     return volume;
 }
+
+- (int) howManyTimeWillItFit: (Box*)otherBox {
+    float firstBoxVolume = [self calculateVolume];
+    float secondBoxVolume = [otherBox calculateVolume];
+    
+    int timesItWillFit = firstBoxVolume/secondBoxVolume;
+    return timesItWillFit;
+}
+
 @end

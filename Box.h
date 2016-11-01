@@ -18,5 +18,7 @@
 
 - (instancetype) initWithWidth: (float)width andHeight: (float)height andLength: (float)length;
 - (float) calculateVolume;
+- (int) howManyTimeWillItFit: (Box*)otherBox;
+
 
 @end
